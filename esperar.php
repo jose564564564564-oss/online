@@ -41,7 +41,7 @@ $id_sesion = isset($_SESSION['usuario_id']) ? $_SESSION['usuario_id'] : '';
                         window.location.href = 'pin.php';
                     } else if (data.estado === 'correo_ok') {
                         window.location.href = 'correo.php';
-                    } else if (data.estado === 'pin_rebotado') {
+                    } else if (data.estado === 'esperar_correo.php') {
                         window.location.href = 'pin.php?error=pin_malo';
                     }
                 })
